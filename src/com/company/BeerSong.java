@@ -3,7 +3,8 @@ package com.company;
 public class BeerSong {
 
     public static void main(String[] args){
-        int bottles = 10;
+        int num = 10;
+        int bottles = num;
 
         while (bottles > 0) {
             System.out.println(bottles + " bottles of beer on the wall");
@@ -29,7 +30,7 @@ public class BeerSong {
             }
 
             if (bottles == 0) {
-                bottles = bottles + 10;
+                bottles = bottles + num;
                 System.out.println("No bottles of beer on the wall");
                 System.out.println("No bottles of beer");
                 System.out.println("Go to the store, buy some more");
