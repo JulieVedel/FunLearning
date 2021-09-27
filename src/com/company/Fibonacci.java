@@ -3,12 +3,14 @@ package com.company;
 public class Fibonacci {
 
     public static void main(String[] args) {
-        int nLoops = 10;
+        fibonacci(10);
+    }
+    public static void fibonacci(int loops) {
         int first = 1;
         int second = 0;
         int sum;
         System.out.println("n = 0 and nx = 0");
-        for (int n = 1; n <= nLoops; n++) {
+        for (int n = 1; n <= loops; n++) {
             sum = first + second;
             first = second;
             second = sum;
